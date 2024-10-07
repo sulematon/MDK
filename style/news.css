@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*font-family: "Montserrat", sans-serif;*/
+
+::-webkit-scrollbar {
+    display: none; /* Скрыть скроллбар */
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    background: linear-gradient(to bottom, rgba(22, 15, 46, 1) 0%, rgba(6, 5, 5, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    padding: 56px 122px;
+}
+
+
+/*HEADER*/
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation .nav-bar{
+
+    float: right;
+}
+
+.navigation .nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+
+}
+
+.navigation .nav-bar ul li {
+    margin: 0 30px;
+    color: white;
+}
+
+.navigation .nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+.navigation .nav-bar ul li a:hover {
+    color: #FDC500;
+}
+
+.container hr {
+    margin-top: 15px;
+    height: 1px;
+    background: #fff;
+    opacity: 80%;
+}
+
+/*MAIN*/
+
+.active {
+    padding: 95px 0;
+    padding-bottom: 30px;
+}
+
+.active h1 {
+    color: #FDC500;
+    font-weight: 700;
+    font-size: 70px;
+    max-width: 800px;
+}
+
+.active span {
+    color: #fff;
+    font-size: 60px;
+}
+
+.active button {
+    padding: 20px 50px;
+    background: #eb3a30;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.active button:hover {
+    transform: scale(1.1);
+    background: #f31307;
+}
+
+.news-main-info {
+    padding: 80px 0;
+}
+
+.news-main-info .eviction {
+    padding: 40px 60px;
+    background: #4C4096;
+
+
+}
+
+.eviction h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.eviction p {
+    font-size: 20px;
+    max-width: 1100px;
+    padding: 0 140px;
+}
+
+.news-main-info .eviction .img-prof {
+    text-align: center;
+}
+
+.news-main-info .eviction img {
+    width: 80%;
+    height: auto;
+}
+
+.dedication {
+    margin: 0;
+    padding: 60px 122px;
+}
+
+.dedication h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.dedication p {
+    padding: 0 50px;
+    max-width: 1200px;
+    font-size: 18px;
+}
+
+.dedication span {
+    font-size: 22px;
+    padding: 0 50px;
+    font-weight: 600;
+}
+
+.cwest-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 220px;
+    padding: 10px 0;
+}
+
+.sec-cwest {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+.sec-cwest img {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*FOOTER*/
+footer {
+    background: #000;
+    padding-top: 90px;
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-bottom: 50px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-block .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 3px;
+}
+
+.footer-block .nav-bar ul li {
+    margin: 0 20px;
+
+}
+
+.footer-block .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-block .nav-bar ul li a:hover {
+    color: #FDC500;
+}
+
+footer .link-media {
+    padding: 50px 0;
+
+}
+
+footer .link-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.developer h3 {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+.developer-contacts {
+    display: flex;
+    justify-content: center;
+
+}
+.developer a {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 40px;
+    position: relative;
+}
+
+.developer a:hover:before{
+    transform: scaleX(1);
+    transition: transform 0.3s;
+}
+
+.developer a::before {
+    content: '';
+    background: #FDC500;
+    width: 100%;
+    display: inline-flex;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    border-radius: 10px;
+}
